@@ -1,0 +1,50 @@
+.header {
+    background-color: $primaryColor;
+    height: 400px;
+    margin-top: -110px;
+    transform: skewY(4deg);
+}
+
+.content {
+    color: white;
+    position: relative;
+    padding-top: 130px;
+    transform: skewY(-4deg);
+    text-align: center;
+
+    .text-one {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    h1 {
+        color: $secondaryColor;
+        background-image: linear-gradient(to right, $terciaryColor 5%, $secondaryColor 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 40px;
+    }
+    .text-three {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        a {
+            padding: 10px 30px;
+            margin: 40px 40px 0px;
+            border-radius: 5px;
+            border: none;
+            color: $primaryColor;
+            font-size: 18px;
+            background: white;
+            text-decoration: none;
+            
+        
+        }
+    }
+}

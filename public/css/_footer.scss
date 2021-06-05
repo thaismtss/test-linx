@@ -1,0 +1,29 @@
+footer {
+    position: relative;
+    height: 200px;
+    background-color: $primaryColor;
+
+    .text-footer {
+       position: relative; 
+       top: 50px;
+    }
+    p {
+        text-align: center;
+        color: white;
+        font-size: 14px;
+        padding: 5px;
+        
+    }
+}
+
+footer:before {
+    content:"";
+    position:absolute;
+    top:-50px;
+    height:100px;
+    left:0;
+    right:0;
+    // background:linear-gradient(to bottom right, transparent 48%, $primaryColor 51%);
+    background: $primaryColor;
+    transform: skewY(-2deg);
+}

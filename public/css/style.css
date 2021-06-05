@@ -1,0 +1,269 @@
+.header {
+  background-color: #411E58;
+  height: 400px;
+  margin-top: -110px;
+  -webkit-transform: skewY(4deg);
+          transform: skewY(4deg);
+}
+
+.content {
+  color: white;
+  position: relative;
+  padding-top: 130px;
+  -webkit-transform: skewY(-4deg);
+          transform: skewY(-4deg);
+  text-align: center;
+}
+
+.content .text-one {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.content h1 {
+  color: #ffb200;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(5%, #f0462d), to(#ffb200));
+  background-image: linear-gradient(to right, #f0462d 5%, #ffb200 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
+
+.content .text-three {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.content .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content .buttons a {
+  padding: 10px 30px;
+  margin: 40px 40px 0px;
+  border-radius: 5px;
+  border: none;
+  color: #411E58;
+  font-size: 18px;
+  background: white;
+  text-decoration: none;
+}
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.product {
+  width: 200px;
+  margin: 0 50px 50px 0;
+}
+
+.product-name {
+  color: #411E58;
+  margin: 10px 0;
+}
+
+.price {
+  font-weight: 800;
+  font-size: 18px;
+  color: #411E58;
+  margin: 10px 0;
+}
+
+footer {
+  position: relative;
+  height: 200px;
+  background-color: #411E58;
+}
+
+footer .text-footer {
+  position: relative;
+  top: 50px;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+}
+
+footer:before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  height: 100px;
+  left: 0;
+  right: 0;
+  background: #411E58;
+  -webkit-transform: skewY(-2deg);
+          transform: skewY(-2deg);
+}
+
+@media (max-width: 900px) {
+  .content .buttons a {
+    padding: 5px 10px;
+    margin: 15px 20px 0px;
+  }
+  main .form {
+    margin: 10px auto;
+  }
+  main .share-friend {
+    display: block;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: helvetica;
+}
+
+button {
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #411E58;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 10px 60px;
+  background-color: white;
+  border-radius: 3px;
+  border: 0.3px solid #949494;
+}
+
+#load-products {
+  margin-bottom: 90px;
+}
+
+main {
+  margin: 100px auto;
+  max-width: 80%;
+}
+
+main .box-algorithm-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .text-algorithm {
+  width: 700px;
+}
+
+main .text-algorithm h1 {
+  color: #411E58;
+  margin-bottom: 23px;
+}
+
+main .text-algorithm p {
+  margin: 12px 0;
+}
+
+main .form input {
+  display: block;
+  width: 300px;
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 3px;
+  border: 0.3px solid #949494;
+}
+
+main .form label {
+  color: #411E58;
+}
+
+main .form .genrer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 250px;
+}
+
+main .form .genrer .radio {
+  margin-top: 5px;
+}
+
+main .form .confirm-form {
+  padding: 5px 122px;
+}
+
+main .box-title-special {
+  height: 3px;
+  background-color: #ffb200;
+  text-align: center;
+  margin-top: 40px;
+}
+
+main .box-title-special span {
+  background-color: white;
+  position: relative;
+  top: -0.5em;
+  padding: 0 10px;
+  font-weight: bold;
+  color: #411E58;
+  font-size: 18px;
+}
+
+main .text-share {
+  color: #411E58;
+  margin-top: 40px;
+  text-align: center;
+}
+
+main .share-friend {
+  margin: 40px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .share-friend div {
+  margin-left: 30px;
+}
+
+main .share-friend input {
+  display: block;
+  width: 400px;
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 3px;
+  border: 0.3px solid #949494;
+}
+
+main .share-friend label {
+  color: #411E58;
+  font-weight: 800;
+}
+/*# sourceMappingURL=style.css.map */

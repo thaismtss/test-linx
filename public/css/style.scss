@@ -1,0 +1,131 @@
+@import './variables';
+@import './header';
+@import './products';
+@import './footer';
+@import './mobile';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+
+button {
+    margin: 10px auto;
+    display: flex;
+    color: $primaryColor;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 10px 60px;
+    background-color: white;
+    border-radius: 3px;
+    border: 0.3px solid rgb(148, 148, 148);
+
+    
+}
+
+#load-products {
+    margin-bottom: 90px;
+}
+
+main {
+    margin: 100px auto;
+    max-width: 80%;
+    
+    .box-algorithm-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .text-algorithm {
+        width: 700px;
+
+        h1 {
+            color: $primaryColor;
+            margin-bottom: 23px;
+        }
+        p {
+            margin: 12px 0;
+        }
+    }
+
+    .form {
+        input{
+            display: block;
+            width: 300px;
+            padding: 5px;
+            margin: 10px 0;
+            border-radius: 3px;
+            border: 0.3px solid rgb(148, 148, 148);
+        }
+        
+        label  {
+            color: $primaryColor;
+        }
+        
+        .genrer {
+            display: flex;
+            width: 250px;
+            
+            .radio {
+                margin-top: 5px;
+            }
+            
+        }
+        .confirm-form {
+            padding: 5px 122px;
+        }
+
+    }
+
+    .box-title-special{
+        height: 3px;
+        background-color: $secondaryColor;
+        text-align: center;
+        margin-top: 40px;
+
+        span {  
+            background-color: white;
+            position: relative;
+            top: -0.5em;
+            padding: 0 10px;  
+            font-weight: bold;
+            color: $primaryColor;
+            font-size: 18px;
+        }
+    }
+
+    .text-share {
+        color: $primaryColor;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .share-friend {
+        margin: 40px 40px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        div {
+            margin-left: 30px;
+        }
+        input {
+            display: block;
+            width: 400px;
+            padding: 5px;
+            margin: 10px 0;
+            border-radius: 3px;
+            border: 0.3px solid rgb(148, 148, 148);
+
+        }
+
+        label {
+            color: $primaryColor;
+            font-weight: 800;
+        }
+    }
+}
+

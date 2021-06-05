@@ -1,0 +1,23 @@
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;   
+}
+
+.product {
+    width: 200px;
+    margin: 0 50px 50px 0;
+}
+
+.product-name {
+    color: $primaryColor;
+    margin: 10px 0;
+}
+
+.price {
+    font-weight: 800;
+    font-size: 18px;
+    color: $primaryColor;
+    margin: 10px 0;
+}
