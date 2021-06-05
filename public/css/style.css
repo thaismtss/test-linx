@@ -129,6 +129,16 @@ footer:before {
   main .share-friend {
     display: block;
   }
+  .product {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .content .buttons a {
+    padding: 5px 10px;
+    margin: 10px 10px 0px;
+  }
 }
 
 * {
