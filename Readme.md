@@ -14,8 +14,11 @@ cd test-linx
 npm install
 
 npm run start
-
 ```
+
+### Dependências para desenvolvimento:
+:wrench: [Broserify](https://browserify.org/)
+:wrench: [Sass Compiler - VSCode](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass)
 
 ### Tecnologias utilizadas:
 
