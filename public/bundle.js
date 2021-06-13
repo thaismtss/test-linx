@@ -1594,7 +1594,7 @@ module.exports = {
 const axios = require('axios');
 const BASE_URL = "https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1"
 
-const getProducts = async (url) => {
+const getProducts = async (url = BASE_URL) => {
     try {
       const response = await axios.get(url);
   
@@ -1640,7 +1640,6 @@ const createElement = item => {
     installments.textContent = `ou ${item.installments.count}x de ${formatCurrency(item.installments.value)}`
 
     button.textContent = "Comprar"
-    console.log(formatCurrency(item.oldPrice))
     return [img, name, description, oldPrice, price, installments, button]
 }
 
@@ -1655,11 +1654,16 @@ const create = item => {
   }
 }
 
+// const getUrl = async(url) => {
+//   const get_url = await getProducts(url);
+//   console.log(get_url.nextPage)
+//   return get_url.nextPage
+// }
+
+n = 2
 loadMoreProducts = async () => {
-  const products = await getProducts(BASE_URL);
-  const url = products.nextPage
-  console.log(products.nextPage)
-  return getItem(await getProducts(`https://${url}`))
+  getItem(await getProducts(`https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=${n}`));
+  return n++;
 }
 
 const formatCurrency = value => {
@@ -1667,7 +1671,7 @@ const formatCurrency = value => {
 }
 
 const main = async () => {
-    getItem(await getProducts(BASE_URL));
+    getItem(await getProducts());
     
 }
 
